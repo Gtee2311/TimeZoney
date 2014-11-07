@@ -18,6 +18,7 @@ class UsersController < ApplicationController
         
         if @user.save
             #success
+            UserMailer.welcome_email(@user).deliver
             redirect_to user_path(@user), notice: {success: 'Successfully signed up' }
         else
             #fail

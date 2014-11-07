@@ -4,6 +4,7 @@ Workspace::Application.routes.draw do
   resources :users
   
   root "sessions#new"
+  get 'sign_in' => "sessions#new"
 
   
   

@@ -14,7 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/.env
+/.mailtrapenv.shs
 
 #Ignore Cloud 9 files
 /.c9
