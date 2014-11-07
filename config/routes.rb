@@ -1,4 +1,12 @@
 Workspace::Application.routes.draw do
+  
+  get 'sign_up' => 'users#new'
+  resources :users
+  
+  root "sessions#new"
+
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
